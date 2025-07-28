@@ -1,3 +1,4 @@
 keys/my_private.pem
 __pycache__/
 venv/
+anaconda_projects/db/project_filebrowser.db

@@ -1,9 +1,9 @@
 from pathlib import Path
 
 # Who am I?
-MY_NAME = "alice"  # or "bob"
+MY_NAME = "F"  # or "bob"
 
-# Key paths
+# Key paths 
 KEYS_DIR = Path("keys")
 PUBLIC_KEYS = {
     "F": KEYS_DIR / "Fpublic.pem",

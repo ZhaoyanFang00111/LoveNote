@@ -11,7 +11,7 @@ def main():
 
     if choice == "1":
         msg = input("Write your message: ")
-        recipient = "alice" if MY_NAME == "bob" else "bob"
+        recipient = "L" if MY_NAME == "F" else "L"
         add_note(MY_NAME, recipient, msg)
         git_push()
     elif choice == "2":
