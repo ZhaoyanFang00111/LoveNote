@@ -27,8 +27,8 @@ def draw_random_note():
     try:
         text = hybrid_decrypt(
             note["ciphertext"],
-            PRIVATE_KEYS['L'],
-            PRIVATE_KEYS['F']# decrypt using your private key and sender’s public key
+            PRIVATE_KEYS['F'],
+            PRIVATE_KEYS['L']
         )
         print(f"🎉 Message from {note['sender']} at {note['timestamp']}:\n{text}")
         chosen.unlink()  # Delete after reading
