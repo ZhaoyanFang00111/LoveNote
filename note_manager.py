@@ -1,11 +1,11 @@
 import json, uuid, random
 from datetime import datetime
 from config import *
-from encryptor import encrypt_message, decrypt_message
+from encryptor import hybrid_encrypt, hybrid_decrypt
 
 def add_note(sender, recipient, message):
     filename = f"{uuid.uuid4().hex}.json"
-    encrypted = encrypt_message(message, PUBLIC_KEYS[sender], PUBLIC_KEYS[recipient])
+    encrypted = hybrid_encrypt(message, PUBLIC_KEYS[sender], PUBLIC_KEYS[recipient])
     note = {
         "sender": sender,
         "recipient": recipient,
@@ -25,12 +25,12 @@ def draw_random_note():
     with open(chosen) as f:
         note = json.load(f)
     try:
-        text = decrypt_message(
+        text = hybrid_decrypt(
             note["ciphertext"],
             PRIVATE_KEY,
-            PUBLIC_KEYS[note["sender"]]  # decrypt with sender's pub (outer), my priv (inner)
+            PUBLIC_KEYS[note["sender"]]  # decrypt using your private key and sender’s public key
         )
         print(f"🎉 Message from {note['sender']} at {note['timestamp']}:\n{text}")
-        chosen.unlink()  # Delete after drawing
+        chosen.unlink()  # Delete after reading
     except Exception as e:
         print(f"⚠️ Failed to decrypt: {e}")
