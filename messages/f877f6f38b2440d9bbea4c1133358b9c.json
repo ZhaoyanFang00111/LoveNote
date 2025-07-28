@@ -1,0 +1,6 @@
+{
+  "sender": "F",
+  "recipient": "L",
+  "timestamp": "2025-07-28T17:12:47.652376",
+  "ciphertext": "{\"enc_session_key_1\": \"MOF6QWym8ZvurM8Jg+S7+Eg8rI6Ty3JDS+eUWH8LaXpBUQqiuc4qt+EznqyKRkiF9cb9v+jF9tCLnz7CbBx/POa1IAe5sJrsq7ATWxvUBNvx27/SNgda6yZTLf2y9JWZZ5yHXskNN8mv4LMzfgnBYONqj4HFtd7kcH/c0FKF8j1RC7vG0YFmzR0IR1zOZdsh39wVQO7WcqPnmLr8PKRG1lMsre/HhEv/bexdEoWHdCKubOMfg3YRqJon8Lsgl3RbyZ28VW7g9ig8aQFFkeCPlrbVsXUmBi6G2qXS6rQSx9u6PV9Ffk9PjAOcwnodGqXi1rxwur0uZFOzQFr0Z5/tgA==\", \"enc_session_key_2\": \"as+nRgh91YMuf07GQPzbTYobvlDSVdPF+9MBseNPpsYl5b2G9qbmtB/mq+VZWL2Wmx0eH1xveVJnkrhjsId9BlSwdNJHh2owOpcEe04kiaD64vN28wwGB5mwqP9l9ynxhRmDbhnB/vhWAqeYvWAeQIiddyLB/+eW5pCOy4nfilSqKHxT3nCRjsmJYSp+h5M7JRZ7IbsJXwTs84yk7ix1U8ZHu3eqUhtp8Y2yBS6Gplyvk1CiWmV/uiCsbEvrWD1Fb/mDcgmUNRVKUfGP557mXc6EaOFfkRsLG2PLpLGGVQb1GF/8rf4R6O5toBO2n/mmxU1vJCDy/AopPVa/MezPeQ==\", \"nonce\": \"0NHoZ+ffzXl0tHdIcEHAbw==\", \"tag\": \"g1ljHbxnDjE+/8KIRS9gdQ==\", \"ciphertext\": \"GUNUZAh5UnOckw==\"}"
+}
