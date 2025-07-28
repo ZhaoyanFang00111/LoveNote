@@ -9,8 +9,9 @@ PUBLIC_KEYS = {
     "F": KEYS_DIR / "Fpublic.pem",
     "L": KEYS_DIR / "Lpublic.pem",
 }
-PRIVATE_KEY = KEYS_DIR / "Fprivate.pem"
-PRIVATE_KEY1 = KEYS_DIR/ "Lprivate.pem"
-
+PRIVATE_KEYS = {
+    "F": KEYS_DIR / "Fprivate.pem",
+    "L": KEYS_DIR / "Lprivate.pem",
+}
 # Messages directory
 MESSAGES_DIR = Path("messages")

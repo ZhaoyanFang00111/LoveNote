@@ -5,7 +5,7 @@ from encryptor import hybrid_encrypt, hybrid_decrypt
 
 def add_note(sender, recipient, message):
     filename = f"{uuid.uuid4().hex}.json"
-    encrypted = hybrid_encrypt(message, PUBLIC_KEYS[sender], PUBLIC_KEYS[recipient])
+    encrypted = hybrid_encrypt(message, PUBLIC_KEYS['F'], PUBLIC_KEYS['L'])
     note = {
         "sender": sender,
         "recipient": recipient,
@@ -27,8 +27,8 @@ def draw_random_note():
     try:
         text = hybrid_decrypt(
             note["ciphertext"],
-            PRIVATE_KEY,
-            PRIVATE_KEY1# decrypt using your private key and sender’s public key
+            PRIVATE_KEYS['L'],
+            PRIVATE_KEYS['F']# decrypt using your private key and sender’s public key
         )
         print(f"🎉 Message from {note['sender']} at {note['timestamp']}:\n{text}")
         chosen.unlink()  # Delete after reading
