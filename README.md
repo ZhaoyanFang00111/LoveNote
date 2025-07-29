@@ -4,3 +4,4 @@ To start, use
 <pre>pip install -r requirements.txt</pre>
 and run
 <pre>python3 main.py</pre>
+This is the testing version where both keys are stored on my computer. It will be changed later.
