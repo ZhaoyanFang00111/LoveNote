@@ -1,4 +1,5 @@
-keys/my_private.pem
+keys/Fprivate.pem
+keys/Pprivate.pem
 __pycache__/
 venv/
 anaconda_projects/db/project_filebrowser.db
