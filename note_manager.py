@@ -31,6 +31,5 @@ def draw_random_note():
             PRIVATE_KEYS['L']
         )
         print(f"🎉 Message from {note['sender']} at {note['timestamp']}:\n{text}")
-        chosen.unlink()  # Delete after reading
     except Exception as e:
         print(f"⚠️ Failed to decrypt: {e}")
